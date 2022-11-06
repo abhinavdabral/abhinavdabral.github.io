@@ -16,9 +16,6 @@ GPU: nvidia T600 4GB (PNY VCNT600-SB)
 ```
 
 Now, let's get started.
-
-# GPU Passthrough in Proxmox 7.2-11
-
 ## 1. Passthrough modules to be loaded
 > This will ensure that these modules are loaded, as these will help with the passthrough
 
@@ -97,18 +94,18 @@ options kvm ignore_msrs=1
 
 Within `/etc/default/grub`, ensure that we have
 
-```
+```shell
 GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on nomodeset video=vesafb:off video=efifb:off video=simplefb:off"
 ```
 
 Update GRUB after updating the file above
 
-```
+```shell
 update-grub && update-initramfs -u
 ```
 
 ## 8. Reboot
-```
+```shell
 shutdown -r 0
 ```
 
@@ -118,3 +115,9 @@ shutdown -r 0
 2. Open "Hardware" configuration of your VM where you want to attach the GPU
 3. Click on "Add" on the top left, and select the GPU you want to pass through (the same one as the one in Step 4)
 ![Adding GPU](/images/20221106-add-pci-device.png)
+4. Set it as Primary GPU (if that's going to be the primary GPU) and save it.
+4. Boot the VM and install drivers (if needed by the guest OS)
+4. Profit?
+
+
+I've had help from various sources in figuring this out and this happens to break during upgrades, but so far this particular configuration is working for me for the given version of proxmox with specified kernel and the specified GPU.

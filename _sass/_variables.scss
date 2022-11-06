@@ -4,7 +4,7 @@
 //
 
 // Colors
-$hover: #ffff00;
+$hover: #74aadc;
 
 // Grays
 // $selectionHighlightColor: #000;
@@ -15,16 +15,19 @@ $hover: #ffff00;
 // $mainBg: #fff;
 
 $selectionHighlightColor: #666;
-$headings: #ffff00;
+$headings: #fff;
 $shade4: #ccc;
+$shade5: #aaa;
 $shade3: #EEEEEE;
 $shade2: #111; // footer-bg, selection-bg, etc
 $mainBg: #222; 
-
+$blockquote: #21598e;
 // Font stacks
 $font1: Helvetica, Arial, sans-serif;
 $font2: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font3: Georgia, serif;
+
+$inlinecode: #ff6a00;
 
 // Mobile breakpoints
 @mixin mobile {

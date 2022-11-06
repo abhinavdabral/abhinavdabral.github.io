@@ -257,12 +257,12 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $shade3;
+    margin: 0.5em 0.5em;
+    border-left: 5px solid $blockquote;
     padding: 0.1em 1em;
     color: $shade3;
-    font-size: 22px;
-    font-style: italic;
+    background: rgba(255,255,255,0.03);
+    // font-style: italic;
   }
 
   .comments {
@@ -272,6 +272,10 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+
+  .date {
+    color: $shade5;
   }
 }
 
