@@ -3,7 +3,7 @@ layout: post
 title: Android Apps on my daily driver
 ---
 
-{% capture threat_model %}{% link _pages/2023-7-17-DeGoogled-android-setup-with-GrapheneOS.md %}#my-threat-model-in-short{% endcapture %}
+{% capture threat_model %}{% link _posts/2023-7-17-DeGoogled-android-setup-with-GrapheneOS.md %}#my-threat-model-in-short{% endcapture %}
 The idea of "privacy" with Android apps comes with a fair share of compromises in most cases. So the chances that you are going to get the same (or better) experience than what you're current using is pretty slim (but it's still there). Personally, it's all worth it to me.
 
 _Last updated: 2023-08-12_
