@@ -1,9 +1,11 @@
 ---
 layout: post
-title: GrapheneOS - My setup, preferences, troubleshooting and more
+title: How I use GrapheneOS on my Pixel 7
 ---
 
 This is not a general guide for anyone in specific, really. I'm just using this as a public notebook of sharing my experience with it. What works, what doesn't and how to get around certain things. I'll probably just update this doc as I have new things to add, instead of creating new posts every time.
+
+_Last updated: {{page.last_updated}}_
 
 To set the context, let me give you a summary of my threat model, so it becomes relevant on why I'm doing things, the way I'm doing them.
 
@@ -60,38 +62,19 @@ The idea is to use app apps in the single workspace.
 
 ## 2. Apps
 
-#### 2.1 FOSS Apps
-
-### 2.1.1 TrackerControl
-
-This amazing project is my go-to solution for local DNS filtering. Personally, I have found this app as the most user-friendly solution to block apps from accessing stuff that you probably don't want it to access.
-
-- Blocks ads/trackers at DNS level
-- Blocks internet for apps (must-have for all stock ROMs)
-- Gives you per-app control rather than just allowing or disallowing something globally.
-
-#### 2.1.1 Shelter
-
-This is FOSS alternative of "Island" app on Google Play.
-
-- It essentially helps you enable the "Work" profile on your phone. I
-- With File Shuttle enabled, within settings, it allows you to share files between work profiles. That is, you're able to send someone a photo stored in work profile, using an app that's running on person profile (or vice-versa).
-
-### 2.2 Non-FOSS apps
-
-#### 2.2.1 GCam Mod (Google Camera)
-
-It's just the very best. There's really no comparison. With Pixels you don't even need GCam mod (unless there's a specific config that makes it even better). So, I personally just download this off-of Aurora Store.
-
-#### 2.2.2 Google Photos
-
-Essential if you want to use official Google Camera app (or even most of the GCam Mod apps). Just disable the internet access and except "lens" everything else works. And it is a very nice Gallery app. Much better than current FOSS offerings.
+I've a separate post which I try to keep updated with everything important that I use.
 
 # Troubleshooting
 
 ## 1. "Axis Mobile" app crashing after entering MPIN
 
-### 1.1 Confirm the reason behind the crash
+### 1.1 When does Axis Mobile app crashes
+
+- In the first launch, the app asks for your permission to send an SMS to get your account details.
+- Once you're in the dashboard / home area of the app, the app crashes.
+- This is the point where it has to go through the 2nd phase of verification and asks you for your Account number or Card details to verify your account. But it doesn't happen if your app crashes before that.
+
+### 1.2 Confirm the reason behind the crash
 
 The likely reason for crash could be that the app was not able to connect to Firebase Cloud Messaging service via GSF. But just to ensure that, we can let the app crash and open the crash logs to see the details.
 
@@ -101,6 +84,8 @@ Clicking on that will show the log and we can just see that the error states
 
 ```
 ... java.IO.Exception: SERVICE_NOT_AVAILABLE
+OR
+,,, java.IO.Exception: FIS_AUTH_ERROR
 ..
 ..
    at com.google.android.gms ...
@@ -108,8 +93,9 @@ Clicking on that will show the log and we can just see that the error states
 
 All of this translates into the fact that Axis Mobile app is trying to utilize Google Services Framework (likely for FCM - Firebase Cloud Messaging) and the "failure" is not gracefully handled in the app, resulting in a crash.
 
-### 1.2 Fixing the crash
+### 1.3 Fixing the crash
 
 - Just set "Network" permission of "Google Play services" to be "Allowed" for the initial login to succeed.
+- I was using TrackerControl and I had to turn it off until I completed the second level verification. You might have to either allow or disable your VPN filter (if any) only until verification is done.
 
-Once we do that and relaunch the Axis mobile app, it proceeds smoothly. After the initial login and verification is complete, it's safe to revoke the "Network" permission from the "Google Play services" app so that it can't continue to connect to internet again.
+Once we do that and relaunch the Axis mobile app, it proceeds smoothly. After the initial login and verification is complete, it's safe to revoke the "Network" permission from the "Google Play services" app so that it can't continue to connect to internet again. And you can also proceed to enable your VPN filter back on again.
