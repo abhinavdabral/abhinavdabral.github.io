@@ -3,9 +3,10 @@ layout: post
 title: Android Apps on my daily driver
 ---
 
+{% capture threat_model %}{% link _pages/2023-7-17-DeGoogled-android-setup-with-GrapheneOS.md %}#my-threat-model-in-short{% endcapture %}
 The idea of "privacy" with Android apps comes with a fair share of compromises in most cases. So the chances that you are going to get the same (or better) experience than what you're current using is pretty slim (but it's still there). Personally, it's all worth it to me.
 
-_Last updated: {{page.last_updated}}_
+_Last updated: 2023-08-12_
 
 You can refer to my threat model on my other post. But specifically for apps, my definition of "privacy friendly" is:
 
@@ -63,7 +64,7 @@ This is FOSS alternative of "Island" app on Google Play.
 
 #### Why am I not using Shelter anymore?
 
-In my other post [LINK] I mentioned that I was using a personal profile + work profile setup in the past to separate out the apps but now I've switched back to using just one profile. Therefore, I am not using this app in the current setup.
+In my other [post]({{threat_model}}) I mentioned that I was using a personal profile + work profile setup in the past to separate out the apps but now I've switched back to using just one profile. Therefore, I am not using this app in the current setup.
 
 ### 2.1.2 Lawnchair Alpha
 

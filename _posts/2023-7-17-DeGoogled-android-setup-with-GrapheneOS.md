@@ -5,7 +5,7 @@ title: How I use GrapheneOS on my Pixel 7
 
 This is not a general guide for anyone in specific, really. I'm just using this as a public notebook of sharing my experience with it. What works, what doesn't and how to get around certain things. I'll probably just update this doc as I have new things to add, instead of creating new posts every time.
 
-_Last updated: {{page.last_updated}}_
+_Last updated: 2023-08-12_
 
 To set the context, let me give you a summary of my threat model, so it becomes relevant on why I'm doing things, the way I'm doing them.
 
