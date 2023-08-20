@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Traefik (v2) configuration for a small self-hosted setup (without docker labels)
+title: Traefik (v2) with wild-card certificates and without docker labels
 ---
 
 As of today, most of the traefik configuration that I came across are using docker labels. And while that's perfectly fine, I find it hard to read and manage. Which is why, when I decided to move from [nginx-proxy-manager](https://github.com/NginxProxyManager/nginx-proxy-manager) over to [traefik](https://github.com/traefik/traefik), I wanted to keep to keep everything clean, readable and most-importantly, understandable.
