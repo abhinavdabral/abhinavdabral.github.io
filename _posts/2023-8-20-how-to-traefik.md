@@ -165,6 +165,11 @@ entryPoints:
   https:
     address: ":443"
     http:
+      # tls: ....
+      # You can also specify the TLS section here instead
+      # of the routers, if you only have a single domain name.
+      # Then, within routers you can just put `tls: {}` everywhere
+      # and it will work
       middlewares:
         # IMPORTANT:
         # This tells traefik to apply this set of middleware
