@@ -377,4 +377,6 @@ Keep and eye on the logs and see if anything is wrong. But if everything works a
 
 # Conclusion
 
-This modular configuration have made things much easier for me and now I am a bit more confident about the configurations. This guide was mostly aimed at someone who also have a server up and running but wants to start using traefik. This is not a complete guide by any means but just a boilerplate to make things work.
+The setup that I presented above, works great for me. It helps me clearly visualize the different parts of the configuration and manage them separately.
+
+I hope that someone finds this post to be helpful in setting up their own traefik reverse proxy. If there are any questions or suggestions to improve this post, please feel free to open an issue on [GitHub repository](https://github.com/abhinavdabral/abhinavdabral.github.io).
