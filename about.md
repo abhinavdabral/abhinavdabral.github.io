@@ -8,6 +8,15 @@ Professionally I am a software engineer, specialized in front-end development us
 
 ## Motivation behind this site
 
-I've been concerned about online privacy (not just my own, but in-general) for a while now. So in 2019, I finally started self-hosting some of the things, so that I could start taking control of some of my data. During all this time I've had chance to know about new (for me) things that could help me with my journey of regaining control of my privacy. 
+Ever since I started reading the "Terms and Conditions" and "Privacy Policy" of services that I was using, I just stopped using them. Instead, I switched to self-hosted alternatives to those services, which helped me regain control over my data. 
 
-This blog is mainly a publicly available notebook where I'll keep notes of "What I did and how I did it", because there have been times where I exactly needed that, when debugging something or just setting things up again. On the off-chance that someone stumbles upon this site, I hope they find something useful.
+The motivation behind this blog is to share my experience with a variery of things that are related to privacy and self-hosting.
+
+## Published articles
+
+- [Simplifying WebGL: Building an Effective Layout Engine](https://blog.certa.dev/building-a-layout-engine-for-webgl)
+  - _Published on [Certa Dev Blog ](https://blog.certa.dev/) on 9 August, 2023_
+- [Making an OTP Lock for Windows Applications or Games — using Go and React Native](https://medium.com/swlh/making-games-application-lock-using-go-and-react-native-71090d0af65c)
+  - _Published in [The Startup](https://medium.com/swlh) on 8 September, 2019_
+- [Setting up automation testing — Using React-Native (0.59) + Appium (1.13.0)](https://medium.com/swlh/automation-testing-using-react-native-and-appium-on-ubuntu-ddfddc0c29fe)
+  - _Published in [The Startup](https://medium.com/swlh) on 20 May, 2019_
