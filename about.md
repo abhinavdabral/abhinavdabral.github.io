@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Professionally I am a software engineer, specialized in front-end development using ReactJS. I am currently working with an awesome team at [Certa](https://getcerta.com), building a product that's being used by Fortune 500 companies.
+Professionally, I am a software engineer, specialized in front-end development using ReactJS. I am currently working with an awesome team at [Certa](https://getcerta.com), building a product that's being used by Fortune 500 companies.
 
 ## Motivation behind this site
 
