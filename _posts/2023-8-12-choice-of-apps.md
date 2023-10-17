@@ -83,7 +83,7 @@ Etar is a calendar app. There was no highlighting reason for me to use this app,
 
 It also works well calendars added via DAVx⁵.
 
-### FairEmail
+### 1.1.6 FairEmail
 
 I was using K-9 Mail until May, 2023 but then switched to FairEmail. FairEmail works well and comes with a lot of options to tweak your experience. The defaults are very privacy friendly and you can tweak that to adjust your experience to be more user-friendly, if you like.
 
@@ -113,6 +113,21 @@ Essential if you want to use official Google Camera app (or even most of the GCa
 ### 1.2.3 Lawnchair 2
 
 I recently switched to Lawnchair 2, from Lawnchair Alpha (which is available on GitHub). This version allows a bit more customization and allows categorization of apps within the app drawer. But other than that, it's still very lightweight and feels very close to stock launcher.
+
+### 1.2.4 FitCloudPro
+
+This is an interesting one. So, when it comes to smartwatch, my approach was in reverse. I tried finding a smartwatch that was either compatible with Gadgetbridge or had an app that can work without Signing up.
+
+Now, Gadgetbridge supports a decent selection of smartwatches but adding them to gadgetbridge requires some annoyingly steps. 
+
+Anyway, long-story short, I got myself a smartwatch which used FitCloudPro.
+
+#### Why I like it?
+
+- No signup required
+- It was generally complete and didn't lacked any important features (quite comparable to Mi Fit app, or similar)
+
+I'm not going to nit-pick regarding what could be better. I'm just glad that it works without internet connection and an account. 
 
 # 2. Apps that I have used in the past
 
