@@ -34,11 +34,11 @@ For wildcard certificate requests, we specify the domain and subdomain names wit
 ### Example
 
 If we request a wildcard certificate that mentions the following - `*.mydomain.com, *.internal.mydomain.com, mydomain.com`, it will be valid for following domains:
-       - anything.mydomain.com
-       - dashboard.internal.mydomain.com
-       - mydomain.com
+  - anything.mydomain.com
+  - dashboard.internal.mydomain.com
+  - mydomain.com
 
-At any point if we wish to add a new subdomain, let's say `nextcloud.mydomain.com`, we can just do it and use the exact same certificate that we already have. 
+At any point if we wish to add a new subdomain, let's say `nextcloud.mydomain.com`, we can just do it and use the exact same certificate that we already have, without having to regenerate a new one.
 
 # Why are wildcard certificates important?
 
