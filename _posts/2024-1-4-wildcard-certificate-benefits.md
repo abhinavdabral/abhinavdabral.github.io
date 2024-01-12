@@ -92,6 +92,6 @@ Unless we've a very good reason not to, we should likely be using wildcard certi
 
 Certificates are necessary to ensure private communication between the user and server. Without that, the traffic can easily be monitored and logged by any of the nodes that it passes through, specially at the ISPs.
 
-# Final thoughts
+# 4. Final thoughts
 
 Self-hosting is a great hobby but it can quickly turn into a nightmare if you get targeted by a particularly curious attacker. While this post focuses on importance of wildcard certificates, it's really important to stay in the loop about all other kind of attack vectors. We must always strive to learn about what these are and how to mitigate them.
