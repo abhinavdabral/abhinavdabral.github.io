@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Traefik (v2) with wild-card certificates and without docker labels
+title: Traefik (v3) with wild-card certificates and without docker labels
 ---
 
 As of today, most of the traefik configuration that I came across are using docker labels. And while that's perfectly fine, I find it hard to read and manage. Which is why, when I decided to move from [nginx-proxy-manager](https://github.com/NginxProxyManager/nginx-proxy-manager) over to [traefik](https://github.com/traefik/traefik), I wanted to keep to keep everything clean, readable and most-importantly, understandable.
 
-_Last updated: 2023-08-20_
+_Last updated: 2024-07-01 - Updated Traefik v2 to v3 after verifying that it works with v3_
 
 # Use case
 
@@ -69,7 +69,7 @@ version: "3"
 services:
   traefik:
     container_name: traefik
-    image: traefik:v2.10
+    image: traefik:v3.0
 
     # Enables dashboard access through HTTP
     # which is fine since you don't necessarily need to expose
